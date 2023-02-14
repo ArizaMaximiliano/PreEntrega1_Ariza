@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PreEntrega1_Ariza</title>
+</head>
+
+<body>
+    <div class="titulo">
+        <h1>Calculadora</h1>
+        ¡Para mayores de 10 años!
+    </div>
+
+    <div class="pantalla">
+        <div class="calculadora">
+            <input type="text" id="screen" value="">
+    
+            <button id="n9" onclick="agregar(value)" value="9" >9</button>
+            <button id="n8" onclick="agregar(value)" value="8" >8</button>
+            <button id="n7" onclick="agregar(value)" value="7" >7</button>
+            <button id="n6" onclick="agregar(value)" value="6" >6</button>
+            <button id="n5" onclick="agregar(value)" value="5" >5</button>
+            <button id="n4" onclick="agregar(value)" value="4" >4</button>
+            <button id="n3" onclick="agregar(value)" value="3" >3</button>
+            <button id="n2" onclick="agregar(value)" value="2" >2</button>
+            <button id="n1" onclick="agregar(value)" value="1" >1</button>
+            <button id="n0" onclick="agregar(value)" value="0" >0</button>
+            <button id="suma" onclick="agregar(value)" value="+" >+</button>
+            <button id="resta" onclick="agregar(value)" value="-" >-</button>
+            <button id="multi" onclick="agregar(value)" value="*" >*</button>
+            <button id="divi" onclick="agregar(value)" value="/" >/</button>
+            <button id="dot" onclick="agregar(value)" value="." >,</button>
+    
+            <button id="equal" onclick="calcular()" >=</button>
+            <button id="Del" onclick="retroceso()" >Del</button>
+            <button id="clear" onclick="borrar()" >C</button>
+        </div>
+    </div>
+    
+
+    <div class="potencia">
+        <h2>Potencia</h2>
+        <div class="caja1">
+            <span>Número</span>
+            <input type="text" id="a" value="">
+            <span>elevado a</span>
+            <input type="text" id="b" value="">
+            
+            <button id="calcPot" onclick="potencia()" >Calcular</button>
+            
+        </div>
+        <div class="caja2">
+            <span>Resultado:</span>
+            <input type="text" id="rPot" value="">
+        </div>
+    </div>
+
+    <div class="tatetiSeparador">
+        <h2>TA-TE-TI</h2>
+        <span>Por si no salen las cuentas, a despejarse :)</span>
+    </div>
+
+    <div class="tateti">
+        <button id="reset" onclick="reset()" >Comenzar</button>
+
+        <button id="c1" onclick="turno(id)">-</button>
+        <button id="c2" onclick="turno(id)">-</button>
+        <button id="c4" onclick="turno(id)">-</button>
+        <button id="c3" onclick="turno(id)">-</button>
+        <button id="c5" onclick="turno(id)">-</button>
+        <button id="c6" onclick="turno(id)">-</button>
+        <button id="c7" onclick="turno(id)">-</button>
+        <button id="c8" onclick="turno(id)">-</button>
+        <button id="c9" onclick="turno(id)">-</button>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
